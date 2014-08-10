@@ -1,29 +1,21 @@
-# LocboxCodingChallenge2
+# LocBox coding challenge
 
-TODO: Write a gem description
 
-## Installation
+## Problem 2: A AirBnB JSON interface
 
-Add this line to your application's Gemfile:
+### Part 1: Designing a Ruby interface to the JSON API
 
-    gem 'locbox_coding_challenge_2'
+*Approach:* The AirBnB API is an abstraction. We'd like to build a very
+simple query interface around this API. 
 
-And then execute:
+*Input:* A name of a given city as a string.
+*Output:* A relation/cursor of availability
+  - Columns: 7 day outlook, each day is a column
+  - Rows: Host ID
 
-    $ bundle
+The interface will look something like the following:
 
-Or install it yourself as:
+Airbnb = Airbnb.new(
 
-    $ gem install locbox_coding_challenge_2
+As a first step, we'll need to wrap the JSON interface. We'll not worry about persistence at this stage.
 
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( http://github.com/<my-github-username>/locbox_coding_challenge_2/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
